@@ -37,6 +37,7 @@ class MultiThread {
         new ThreadOne("Two");
         new ThreadOne("Three");
         try {
+            System.out.println("THREAD " + Thread.currentThread().getName() + " WILL BE PUT TO SLEEP FOR " + limit + " MS.");
             Thread.sleep(limit);
         } catch (InterruptedException e) {
             System.out.println("Main thread Interrupted");
